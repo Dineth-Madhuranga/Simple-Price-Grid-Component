@@ -1,0 +1,188 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: hsl(204, 43%, 93%);
+    font-family: Karla, sans-serif;
+}
+
+.card {
+    width: 40%;
+    height: 70%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.main {
+    display: inline-block;
+    height: 50%;
+    width: 100%;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px 10px 0 0;
+    padding-top: 10px;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.price {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    background: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.details {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    background: hsla(179, 70%, 57%, 0.895);
+    border-radius: 0 0 10px 0;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+    padding-left: 20px;
+}
+
+#p1 {
+    font-size: 1em;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+    padding-left: 20px;
+
+}
+
+#p2 {
+    font-size: 1em;
+    font-weight: 400;
+    color: hsl(218, 22%, 67%);
+    padding-left: 20px;
+}
+
+#head2 {
+    font-size: 1em;
+    font-weight: 700;
+    color: hsl(180, 100%, 100%);
+}
+
+#ptag {
+    color: ivory;
+}
+
+span {
+    font-size: 0.5em;
+    color: rgba(255, 255, 240, 0.712);
+}
+
+#p4 {
+    font-size: 0.9em;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+}
+
+button {
+    background: hsl(71, 73%, 54%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 75px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    padding-left: -20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: hsl(65, 77%, 58%);
+}
+
+#why {
+    font-size: 1em;
+    font-weight: 700;
+    color: hsl(180, 100%, 100%);
+}
+
+li {
+    color: hsla(0, 0%, 100%, 0.854);
+    list-style: none;
+    font-size: 0.8em;
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-left: -40px;
+}
+
+
+@media (max-width: 1200px) {
+    .card {
+        width: 60%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 80%;
+        height: auto;
+    }
+
+    .section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .price,
+    .details {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+
+    button {
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    #h1 {
+        font-size: 1.2em;
+    }
+
+    #p1,
+    #p2 {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 10px 30px;
+        font-size: 0.9em;
+    }
+}
